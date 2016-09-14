@@ -1,0 +1,28 @@
+{
+  "@context" : {
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "specializationOf" : {
+      "@id" : "http://www.w3.org/ns/prov#specializationOf"
+    },
+    "wasRevisionOf" : {
+      "@id" : "http://www.w3.org/ns/prov#wasRevisionOf"
+    },
+    "wasGeneratedAt" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedAt"
+    },
+    "wasAttributedTo" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    }
+  }
+}

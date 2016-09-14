@@ -1,0 +1,15 @@
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasAttributedTo> <http://www.essepuntato.it/lode/> .
+<http://purl.org/net/p-plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#specializationOf> <http://example.org/latestVersion> .
+<http://purl.org/net/p-plan> <http://purl.org/dc/terms/contributor> <http://example.org/contributor1> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasAttributedTo> <http://example.org/contributor2> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org/previousVersion> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasGeneratedAt> "Insert the release date here. E.g.: 11 July 2013" .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasAttributedTo> <http://example.org/contributor1> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasAttributedTo> <http://example.org/author2> .
+<http://purl.org/net/p-plan> <http://purl.org/dc/terms/creator> <http://example.org/author2> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasAttributedTo> <http://example.org/author1> .
+<http://purl.org/net/p-plan> <http://purl.org/dc/terms/creator> <http://example.org/author1> .
+<http://purl.org/net/p-plan> <http://www.w3.org/ns/prov#wasAttributedTo> <https://github.com/dgarijo/Widoco/> .
+<http://purl.org/net/p-plan> <http://purl.org/dc/terms/title> "The Test Ontology" .
+<http://purl.org/net/p-plan> <http://purl.org/dc/terms/contributor> <http://example.org/contributor2> .

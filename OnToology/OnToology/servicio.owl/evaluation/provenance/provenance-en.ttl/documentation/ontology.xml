@@ -1,0 +1,26 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://purl.org/net/p-plan">
+    <prov:wasAttributedTo rdf:resource="http://www.essepuntato.it/lode/"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <prov:specializationOf rdf:resource="http://example.org/latestVersion"/>
+    <dc:contributor rdf:resource="http://example.org/contributor1"/>
+    <prov:wasAttributedTo rdf:resource="http://example.org/contributor2"/>
+    <prov:wasRevisionOf rdf:resource="http://example.org/previousVersion"/>
+    <prov:wasGeneratedAt>Insert the release date here. E.g.: 11 July 2013</prov:wasGeneratedAt>
+    <prov:wasAttributedTo rdf:resource="http://example.org/contributor1"/>
+    <prov:wasAttributedTo rdf:resource="http://example.org/author2"/>
+    <dc:creator rdf:resource="http://example.org/author2"/>
+    <prov:wasAttributedTo rdf:resource="http://example.org/author1"/>
+    <dc:creator rdf:resource="http://example.org/author1"/>
+    <prov:wasAttributedTo rdf:resource="https://github.com/dgarijo/Widoco/"/>
+    <dc:title>The Test Ontology</dc:title>
+    <dc:contributor rdf:resource="http://example.org/contributor2"/>
+  </rdf:Description>
+</rdf:RDF>
