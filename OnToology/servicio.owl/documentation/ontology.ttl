@@ -19,13 +19,13 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc:      <http://creativecommons.org/ns#> .
 
-[]    rdfs:label "RDF" .
-
 esproc:lugarPago
       a       owl:ObjectProperty ;
       rdfs:comment "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> ;
       rdfs:label "lugar de pago"@es ;
+      rdfs:range dcterms:Location ;
       rdfs:subPropertyOf <http://purl.org/vocab/cpsv#physicallyAvailableAt> ;
       dcterms:issued "2016-07-28" .
 
@@ -88,14 +88,14 @@ esproc:pago
       rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:string .
 
+rdfs:isDefinedBy
+      a       owl:AnnotationProperty .
+
 esproc:permiteTramitacionPresencial
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
       rdfs:range xsd:boolean ;
       rdfs:subPropertyOf esproc:permiteTramitation .
-
-rdfs:isDefinedBy
-      a       owl:AnnotationProperty .
 
 esproc:lugarPresentacionTexto
       a       owl:DatatypeProperty ;
@@ -105,7 +105,7 @@ esproc:lugarPresentacionTexto
 
 esproc:claseTerminacion
       a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
+      rdfs:domain esproc:Procedimiento .
 
 esproc:enLineaDocumentacion
       a       owl:ObjectProperty ;
@@ -125,7 +125,7 @@ esproc:tipoProcedimiento
 esproc:fechaPresentacionTexto
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato textual)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> ;
       rdfs:label "fecha de presentación (formato texto)"@es ;
       rdfs:range xsd:string ;
@@ -133,7 +133,7 @@ esproc:fechaPresentacionTexto
 
 esproc:fechaPlazoInicio
       a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:dateTime .
 
 esproc:dirigidoPor
@@ -151,7 +151,7 @@ esproc:recursoProcede
 
 esproc:recursoProcedeTexto
       a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:string .
 
 esproc:permiteTramitationCorreoPostal
@@ -162,7 +162,7 @@ esproc:permiteTramitationCorreoPostal
 
 esproc:claseTerminacionTexto
       a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:string .
 
 esproc:detalleTramitacionTelefono
@@ -200,8 +200,6 @@ esproc:procedimientoDeMateria
 esproc:DestinadoProcedimiento
       a       owl:Class ;
       rdfs:subClassOf dcterms:Agent .
-
-[]    rdfs:label "HTML" .
 
 esproc:detalleTramitacionPresencialTexto
       a       owl:DatatypeProperty ;
@@ -277,6 +275,8 @@ rdfs:label
 
 esproc:detalleTramitacionCorreoPostal
       a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorCorreo ;
+      rdfs:range esproc:ProcedimientoProceso ;
       rdfs:subPropertyOf <http://purl.org/vocab/cpsv#follows> .
 
 esproc:Procedimiento
@@ -292,7 +292,7 @@ skos:Concept
 
 esproc:claseIniciacion
       a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
+      rdfs:domain esproc:Procedimiento .
 
 esproc:DocumentacionEntrada
       a       owl:Class ;
@@ -305,6 +305,8 @@ esproc:ProcedimientoProceso
       a       owl:Class ;
       rdfs:subClassOf <http://purl.org/vocab/cpsv#Rule> .
 
+[]    rdfs:label "HTML" .
+
 esproc:detalleTramitacionCorreoPostalTexto
       a       owl:DatatypeProperty ;
       rdfs:subPropertyOf esproc:followsTexto .
@@ -312,7 +314,7 @@ esproc:detalleTramitacionCorreoPostalTexto
 esproc:fechaRespuestaTexto
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato textual)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> ;
       rdfs:label "fecha de respuesta (formato texto)"@es ;
       rdfs:range xsd:string ;
@@ -373,7 +375,8 @@ esproc:permiteTramitacionTelefono
       rdfs:subPropertyOf esproc:permiteTramitation .
 
 esproc:hasChannelTexto
-      a       owl:DatatypeProperty .
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento .
 
 esproc:telefonoDocumentacion
       a       owl:ObjectProperty ;
@@ -391,13 +394,15 @@ esproc:detalleTramitacionEnLineaTexto
       rdfs:range xsd:string ;
       rdfs:subPropertyOf esproc:followsTexto .
 
+[]    rdfs:label "RDF" .
+
 esproc:Via
       a       owl:Class .
 
 esproc:fechaRespuesta
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> ;
       rdfs:label "fecha de respuesta (formato fecha)"@es ;
       rdfs:range xsd:dateTime ;
@@ -426,7 +431,7 @@ esproc:detalleTramitacionPresencial
 
 esproc:fechaPlazoFin
       a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:dateTime .
 
 <http://purl.org/vocab/cpsv#hasChannel>
@@ -438,11 +443,12 @@ owl:topDataProperty
 
 esproc:claseIniciacionTexto
       a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:string .
 
 esproc:permiteTramitation
-      a       owl:DatatypeProperty .
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento .
 
 esproc:presencialDocumentacionTexto
       a       owl:DatatypeProperty ;
@@ -457,7 +463,7 @@ esproc:ProcedimientoPorTelefono
 esproc:fechaPresentacion
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato fecha)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> ;
       rdfs:label "fecha de presentación (formato fecha)"@es ;
       rdfs:range xsd:dateTime ;
@@ -483,6 +489,7 @@ esproc:telefonoDocumentacionTexto
 
 esproc:followsTexto
       a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:string .
 
 esproc:detalleTramitacionTelefonoTexto

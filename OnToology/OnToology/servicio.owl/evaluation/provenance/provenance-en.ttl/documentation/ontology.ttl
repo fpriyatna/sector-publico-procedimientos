@@ -1,0 +1,19 @@
+@prefix dc:      <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://purl.org/net/p-plan>
+      a       prov:Entity ;
+      dc:contributor <http://example.org/contributor2> , <http://example.org/contributor1> ;
+      dc:creator <http://example.org/author1> , <http://example.org/author2> ;
+      dc:title "The Test Ontology" ;
+      prov:specializationOf
+              <http://example.org/latestVersion> ;
+      prov:wasAttributedTo
+              <http://www.essepuntato.it/lode/> , <https://github.com/dgarijo/Widoco/> , <http://example.org/contributor2> , <http://example.org/contributor1> , <http://example.org/author1> , <http://example.org/author2> ;
+      prov:wasGeneratedAt "Insert the release date here. E.g.: 11 July 2013" ;
+      prov:wasRevisionOf <http://example.org/previousVersion> .

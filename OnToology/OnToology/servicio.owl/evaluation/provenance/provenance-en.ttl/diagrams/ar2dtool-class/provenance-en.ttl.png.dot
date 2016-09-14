@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://purl.org/net/p-plan" -> "http://www.essepuntato.it/lode/" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/latestVersion" [ label = "prov:specializationOf" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/contributor1" [ label = "dc:contributor" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/contributor2" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/previousVersion" [ label = "prov:wasRevisionOf" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/contributor1" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/author2" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/author2" [ label = "dc:creator" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/author1" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/author1" [ label = "dc:creator" ];
+	"http://purl.org/net/p-plan" -> "https://github.com/dgarijo/Widoco/" [ label = "prov:wasAttributedTo" ];
+	"http://purl.org/net/p-plan" -> "http://example.org/contributor2" [ label = "dc:contributor" ];
+
+}
