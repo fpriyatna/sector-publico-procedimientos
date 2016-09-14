@@ -3,12 +3,13 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
@@ -27,6 +28,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> .
@@ -43,7 +45,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben resolver las solicitudes (en formato fecha/duraci\u00F3n)"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://purl.org/dc/terms/issued> "2016-07-28" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> .
@@ -67,6 +69,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
@@ -77,7 +80,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben presentar las solicitudes (en formato textual)"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://purl.org/dc/terms/issued> "2016-07-28" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -86,6 +89,8 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Location> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#physicallyAvailableAt> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
@@ -118,14 +123,13 @@
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-_:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -143,7 +147,7 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
@@ -165,9 +169,9 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+_:A40bc5782X3aX15728f1fa3dX3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Rule> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .
@@ -181,26 +185,28 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de respuesta (formato texto)"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben resolver las solicitudes (en formato textual)"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://purl.org/dc/terms/issued> "2016-07-28" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#follows> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://schema.org/question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -214,8 +220,8 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/terms/issued> "2016-07-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representaci\u00F3n de procedimientos administrativos ofrecidos por un ayuntamiento"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio.rdf> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/creator> "V\u00EDctor Morl\u00E1n (Ayuntamiento de Zaragoza)" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/creator> "Freddy Priyatna (Ontology Engineering Group, Universidad Polit\u00E9cnica de Madrid)" .
@@ -229,6 +235,7 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A40bc5782X3aX15728f1fa3dX3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Question> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de presentaci\u00F3n (formato fecha)"@es .
@@ -236,7 +243,7 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben presentar las solicitudes (en formato fecha)"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://purl.org/dc/terms/issued> "2016-07-28" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/question> .
@@ -245,15 +252,15 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Input> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
@@ -287,7 +294,7 @@ _:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#lab
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/vocab/cpsv#hasChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#follows> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.geonames.org/ontology#R.ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://www.geonames.org/ontology#R.ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
