@@ -19,14 +19,6 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc:      <http://creativecommons.org/ns#> .
 
-geonames:R
-      a       owl:NamedIndividual , skos:Concept .
-
-[]    rdfs:label "HTML" .
-
-rdfs:isDefinedBy
-      a       owl:AnnotationProperty .
-
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos>
       a       owl:Ontology ;
       rdfs:comment """Este vocabulario se utiliza para la descripción de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza términos de varios vocabularios, como:
@@ -53,6 +45,264 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
       owl:imports <http://purl.org/vocab/cpsv> ;
       owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1> .
 
+esproc:info
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:CentroServicio .
+
+esproc:materiaDePregunta
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Pregunta ;
+      rdfs:range esproc:Materia .
+
+esproc:LugarPresentacion
+      a       owl:Class ;
+      rdfs:subClassOf schema:CivicStructure .
+
+esproc:hasInputTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range xsd:string .
+
+esproc:permiteTramitacionPresencial
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf esproc:permiteTramitation .
+
+esproc:enLineaURL
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasChannel> .
+
+esproc:permiteTramitacionEnLinea
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf esproc:permiteTramitation .
+
+esproc:lugarPago
+      a       owl:ObjectProperty ;
+      rdfs:comment "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "lugar de pago"@es ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#physicallyAvailableAt> ;
+      dcterms:issued "2016-07-28" .
+
+rdfs:comment
+      a       owl:AnnotationProperty .
+
+esproc:TipoProcedimiento
+      a       owl:Class .
+
+rdfs:isDefinedBy
+      a       owl:AnnotationProperty .
+
+esproc:recursoProcede
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range esproc:Recurso .
+
+esproc:impreso
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasInput> .
+
+esproc:detalleTramitacionCorreoPostalTexto
+      a       owl:DatatypeProperty ;
+      rdfs:subPropertyOf esproc:followsTexto .
+
+esproc:followsTexto
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:string .
+
+esproc:ProcedimientoPorTelefono
+      a       owl:Class ;
+      rdfs:subClassOf esproc:Procedimiento .
+
+esproc:claseTerminacion
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
+
+esproc:destino
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:CentroServicio ;
+      rdfs:subPropertyOf esproc:usedBy .
+
+esproc:fechaPresentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato textual)"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "fecha de presentación (formato texto)"@es ;
+      rdfs:range xsd:string ;
+      dcterms:issued "2016-07-28" .
+
+esproc:detalleTramitacionEnLineaTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorEnLinea ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:followsTexto .
+
+esproc:CentroServicio
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/org#Organization> .
+
+esproc:usedBy
+      a       owl:ObjectProperty .
+
+esproc:detalleTramitacionPresencial
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorPresencial ;
+      rdfs:range esproc:ProcedimientoProceso ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#follows> .
+
+esproc:preguntaDeMateria
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Materia ;
+      rdfs:range esproc:Pregunta ;
+      rdfs:subPropertyOf schema:question .
+
+esproc:lugarPagoTexto
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)"@es ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "lugar de pago (formato texto)"@es ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:hasChannelTexto ;
+      dcterms:issued "2016-07-28" .
+
+esproc:detalleTramitacionTelefono
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range esproc:ProcedimientoProceso ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#follows> .
+
+esproc:permiteTramitacionTelefono
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf esproc:permiteTramitation .
+
+esproc:requisitos
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range xsd:string .
+
+[]    rdfs:label "RDF" .
+
+esproc:correoDocumentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorCorreo ;
+      rdfs:subPropertyOf esproc:hasInputTexto .
+
+esproc:lugarPresentacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:CentroServicio ;
+      rdfs:subPropertyOf esproc:usedBy .
+
+esproc:normativa
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasInput> .
+
+schema:Place
+      a       owl:Class .
+
+<http://www.w3.org/ns/org#Organization>
+      a       owl:Class .
+
+esproc:recursoProcedeTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:string .
+
+esproc:ProcedimientoProceso
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/vocab/cpsv#Rule> .
+
+esproc:ProcedimientoPorPresencial
+      a       owl:Class ;
+      rdfs:subClassOf esproc:Procedimiento .
+
+esproc:Procedimiento
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/vocab/cpsv#PublicService> .
+
+esproc:GestorDecisor
+      a       owl:Class ;
+      rdfs:subClassOf dcterms:Agent .
+
+esproc:otroLugarPresentacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:LugarPresentacion ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasChannel> .
+
+esproc:Recurso
+      a       owl:Class .
+
+schema:CivicStructure
+      a       owl:Class .
+
+geonames:R
+      a       owl:NamedIndividual , skos:Concept .
+
+esproc:realizacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:CentroServicio ;
+      rdfs:subPropertyOf esproc:proporcionadoPor .
+
+esproc:permiteTramitationCorreoPostal
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf esproc:permiteTramitation .
+
+esproc:claseTerminacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:string .
+
+rdfs:label
+      a       owl:AnnotationProperty .
+
+esproc:lugarPresentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:hasChannelTexto .
+
+esproc:Materia
+      a       owl:Class .
+
+esproc:organo
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:GestorDecisor .
+
+skos:Concept
+      a       owl:Class .
+
+esproc:permiteTramitacionCorreoCertificado
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:boolean ;
+      rdfs:subPropertyOf esproc:permiteTramitation .
+
+esproc:DestinadoProcedimiento
+      a       owl:Class ;
+      rdfs:subClassOf dcterms:Agent .
+
+esproc:telefonoDocumentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorTelefono ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:hasInputTexto .
+
 esproc:fechaPresentacion
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato fecha)"@es ;
@@ -62,13 +312,151 @@ esproc:fechaPresentacion
       rdfs:range xsd:dateTime ;
       dcterms:issued "2016-07-28" .
 
-schema:Place
+esproc:ProcedimientoPorEnLinea
+      a       owl:Class ;
+      rdfs:subClassOf esproc:Procedimiento .
+
+schema:question
+      a       owl:ObjectProperty .
+
+[]    rdfs:label "HTML" .
+
+esproc:fechaPlazoFin
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:dateTime .
+
+esproc:Via
       a       owl:Class .
 
-esproc:recursoProcede
-      a       owl:ObjectProperty ;
+esproc:enLineaDocumentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorEnLinea ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:hasInputTexto .
+
+esproc:claseIniciacionTexto
+      a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
-      rdfs:range esproc:Recurso .
+      rdfs:range xsd:string .
+
+esproc:fechaRespuesta
+      a       owl:DatatypeProperty ;
+      rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "fecha de respuesta (formato fecha)"@es ;
+      rdfs:range xsd:dateTime ;
+      dcterms:issued "2016-07-28" .
+
+esproc:Normativa
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/vocab/cpsv#Rule> .
+
+esproc:claseIniciacion
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
+
+schema:Question
+      a       owl:Class .
+
+dcterms:issued
+      a       owl:AnnotationProperty .
+
+esproc:permiteTramitation
+      a       owl:DatatypeProperty .
+
+esproc:telefonoDocumentacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorTelefono ;
+      rdfs:range esproc:DocumentacionEntrada ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasInput> .
+
+esproc:pago
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range xsd:string .
+
+esproc:presencialDocumentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorPresencial ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:hasInputTexto .
+
+esproc:enLineaDocumentacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorEnLinea ;
+      rdfs:range esproc:DocumentacionEntrada ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasInput> .
+
+esproc:Impreso
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/vocab/cpsv#Input> .
+
+esproc:fechaPlazoInicio
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:dateTime .
+
+esproc:tipoProcedimiento
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:TipoProcedimiento .
+
+<http://purl.org/vocab/cpsv#hasChannel>
+      a       owl:ObjectProperty .
+
+owl:topDataProperty
+      a       owl:AnnotationProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
+
+esproc:detalleTramitacionPresencialTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorPresencial ;
+      rdfs:range xsd:string ;
+      rdfs:subPropertyOf esproc:followsTexto .
+
+esproc:detalleTramitacionEnLinea
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorEnLinea ;
+      rdfs:range esproc:ProcedimientoProceso ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#follows> .
+
+<http://purl.org/vocab/cpsv#provides>
+      owl:inverseOf esproc:proporcionadoPor .
+
+esproc:Pregunta
+      a       owl:Class ;
+      rdfs:subClassOf schema:Question .
+
+esproc:presentar
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento .
+
+esproc:enLineaUrl
+      a       owl:DatatypeProperty ;
+      rdfs:domain esproc:ProcedimientoPorEnLinea ;
+      rdfs:range xsd:string .
+
+esproc:correoDocumentacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorCorreo ;
+      rdfs:range esproc:DocumentacionEntrada ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasInput> .
+
+esproc:dirigido
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:subPropertyOf esproc:usedBy .
+
+esproc:detalleTramitacionCorreoPostal
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#follows> .
+
+esproc:procedimientoDeMateria
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Materia ;
+      rdfs:range esproc:Procedimiento .
 
 esproc:fechaRespuestaTexto
       a       owl:DatatypeProperty ;
@@ -79,18 +467,27 @@ esproc:fechaRespuestaTexto
       rdfs:range xsd:string ;
       dcterms:issued "2016-07-28" .
 
-esproc:Via
+esproc:MaterialAgrupacion
       a       owl:Class .
 
-rdfs:label
-      a       owl:AnnotationProperty .
+esproc:proporcionadoPor
+      a       owl:ObjectProperty .
 
-esproc:recursoProcedeTexto
-      a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
-      rdfs:range xsd:string .
+esproc:DocumentacionEntrada
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/vocab/cpsv#Input> .
 
-[]    rdfs:label "RDF" .
+esproc:preguntaDeProcedimiento
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:Procedimiento ;
+      rdfs:range esproc:Pregunta ;
+      rdfs:subPropertyOf schema:question .
+
+esproc:presencialDocumentacion
+      a       owl:ObjectProperty ;
+      rdfs:domain esproc:ProcedimientoPorPresencial ;
+      rdfs:range esproc:DocumentacionEntrada ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#hasInput> .
 
 esproc:tipoVia
       a       owl:ObjectProperty ;
@@ -104,56 +501,21 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       rdfs:range skos:Concept ;
       dcterms:issued "2014-03-28"^^xsd:dateTime .
 
-esproc:lugarPagoTexto
-      a       owl:DatatypeProperty ;
-      rdfs:comment "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
-      rdfs:label "lugar de pago (formato texto)"@es ;
-      rdfs:range xsd:string ;
-      dcterms:issued "2016-07-28" .
+<http://purl.org/vocab/cpsv#uses>
+      owl:inverseOf esproc:usedBy .
 
-esproc:fechaRespuesta
-      a       owl:DatatypeProperty ;
-      rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
-      rdfs:label "fecha de respuesta (formato fecha)"@es ;
-      rdfs:range xsd:dateTime ;
-      dcterms:issued "2016-07-28" .
-
-esproc:lugarPago
-      a       owl:ObjectProperty ;
-      rdfs:comment "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
-      rdfs:label "lugar de pago"@es ;
-      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#physicallyAvailableAt> ;
-      dcterms:issued "2016-07-28" .
-
-esproc:claseIniciacion
-      a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
-
-rdfs:comment
-      a       owl:AnnotationProperty .
-
-dcterms:issued
-      a       owl:AnnotationProperty .
+esproc:ProcedimientoPorCorreo
+      a       owl:Class ;
+      rdfs:subClassOf esproc:Procedimiento .
 
 <http://www.geonames.org/ontology#R.ST>
       a       owl:NamedIndividual , skos:Concept .
 
-skos:Concept
-      a       owl:Class .
-
-esproc:Recurso
-      a       owl:Class .
-
-esproc:fechaPresentacionTexto
+esproc:detalleTramitacionTelefonoTexto
       a       owl:DatatypeProperty ;
-      rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato textual)"@es ;
-      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
-      rdfs:label "fecha de presentación (formato texto)"@es ;
+      rdfs:domain esproc:ProcedimientoPorTelefono ;
       rdfs:range xsd:string ;
-      dcterms:issued "2016-07-28" .
+      rdfs:subPropertyOf esproc:followsTexto .
+
+esproc:hasChannelTexto
+      a       owl:DatatypeProperty .
