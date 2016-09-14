@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="112" parse.nodes="92" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="117" parse.nodes="92" parse.order="free">
       <node id="nid_esproc:permiteTramitationCorreoPostal">
          <data key="d0">
             <y:ShapeNode>
@@ -494,19 +494,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_573d8763:1572869d226:-7ff9">
+      <node id="nid_3fc0378e:15729110edd:-7ff9">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">573d8763:1572869d226:-7ff9</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">3fc0378e:15729110edd:-7ff9</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:creator16" source="nid_http://purl.org/vocab/cpsv" target="nid_573d8763:1572869d226:-7ff9">
+    <edge id="eid_dcterms:creator16" source="nid_http://purl.org/vocab/cpsv" target="nid_3fc0378e:15729110edd:-7ff9">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -517,19 +517,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_573d8763:1572869d226:-7ffa">
+      <node id="nid_3fc0378e:15729110edd:-7ffa">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">573d8763:1572869d226:-7ffa</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">3fc0378e:15729110edd:-7ffa</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_dcterms:publisher17" source="nid_http://purl.org/vocab/cpsv" target="nid_573d8763:1572869d226:-7ffa">
+    <edge id="eid_dcterms:publisher17" source="nid_http://purl.org/vocab/cpsv" target="nid_3fc0378e:15729110edd:-7ffa">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1279,7 +1279,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subPropertyOf47" source="nid_esproc:normativa" target="nid_cpsv:hasInput">
+    <edge id="eid_rdfs:subPropertyOf47" source="nid_esproc:normativa" target="nid_cpsv:follows">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1371,6 +1371,29 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_owl:Thing">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_esproc:hasChannelTexto51" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:hasChannelTexto</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_esproc:TipoProcedimiento">
          <data key="d0">
             <y:ShapeNode>
@@ -1383,7 +1406,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:tipoProcedimiento51" source="nid_esproc:Procedimiento" target="nid_esproc:TipoProcedimiento">
+    <edge id="eid_esproc:tipoProcedimiento52" source="nid_esproc:Procedimiento" target="nid_esproc:TipoProcedimiento">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1418,7 +1441,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:permiteTramitacionTelefono52" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
+    <edge id="eid_esproc:permiteTramitacionTelefono53" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1429,19 +1452,7 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_owl:Thing">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">owl:Thing</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_esproc:presentar53" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
+    <edge id="eid_esproc:presentar54" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1452,7 +1463,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:permiteTramitacionEnLinea54" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
+    <edge id="eid_esproc:permiteTramitacionEnLinea55" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1475,7 +1486,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:pregunta55" source="nid_owl:Thing" target="nid_esproc:Pregunta">
+    <edge id="eid_esproc:pregunta56" source="nid_owl:Thing" target="nid_esproc:Pregunta">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1510,7 +1521,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:detalleTramitacionEnLineaTexto56" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_xsd:string">
+    <edge id="eid_esproc:detalleTramitacionEnLineaTexto57" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1521,7 +1532,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:preguntaDeProcedimiento57" source="nid_esproc:Procedimiento" target="nid_esproc:Pregunta">
+    <edge id="eid_esproc:preguntaDeProcedimiento58" source="nid_esproc:Procedimiento" target="nid_esproc:Pregunta">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1532,7 +1543,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:enLineaDocumentacionTexto58" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_xsd:string">
+    <edge id="eid_esproc:enLineaDocumentacionTexto59" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1543,7 +1554,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:fechaPresentacionTexto59" source="nid_cpsv:PublicService" target="nid_xsd:string">
+    <edge id="eid_esproc:fechaPresentacionTexto60" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1554,7 +1565,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:claseTerminacionTexto60" source="nid_cpsv:PublicService" target="nid_xsd:string">
+    <edge id="eid_esproc:claseTerminacionTexto61" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1577,7 +1588,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:fechaPlazoFin61" source="nid_cpsv:PublicService" target="nid_xsd:dateTime">
+    <edge id="eid_esproc:fechaPlazoFin62" source="nid_esproc:Procedimiento" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1588,7 +1599,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:claseIniciacion62" source="nid_cpsv:PublicService" target="nid_owl:Thing">
+    <edge id="eid_esproc:claseIniciacion63" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1599,7 +1610,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:recursoProcedeTexto63" source="nid_cpsv:PublicService" target="nid_xsd:string">
+    <edge id="eid_esproc:recursoProcedeTexto64" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1622,7 +1633,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:otroLugarPresentacion64" source="nid_esproc:Procedimiento" target="nid_esproc:LugarPresentacion">
+    <edge id="eid_esproc:otroLugarPresentacion65" source="nid_esproc:Procedimiento" target="nid_esproc:LugarPresentacion">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1645,12 +1656,35 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:organo65" source="nid_esproc:Procedimiento" target="nid_esproc:GestorDecisor">
+    <edge id="eid_esproc:organo66" source="nid_esproc:Procedimiento" target="nid_esproc:GestorDecisor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:organo</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_dcterms:Location">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dcterms:Location</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_esproc:lugarPago67" source="nid_esproc:Procedimiento" target="nid_dcterms:Location">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:lugarPago</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1668,7 +1702,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:presencialDocumentacionTexto66" source="nid_esproc:ProcedimientoPorPresencial" target="nid_xsd:string">
+    <edge id="eid_esproc:presencialDocumentacionTexto68" source="nid_esproc:ProcedimientoPorPresencial" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1679,7 +1713,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:normativa67" source="nid_cpsv:PublicService" target="nid_owl:Thing">
+    <edge id="eid_esproc:normativa69" source="nid_cpsv:PublicService" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1690,7 +1724,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:fechaRespuestaTexto68" source="nid_cpsv:PublicService" target="nid_xsd:string">
+    <edge id="eid_esproc:fechaRespuestaTexto70" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1701,7 +1735,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:dirigidoPor69" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
+    <edge id="eid_esproc:dirigidoPor71" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1712,7 +1746,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:lugarPresentacion70" source="nid_esproc:Procedimiento" target="nid_esproc:CentroServicio">
+    <edge id="eid_esproc:lugarPresentacion72" source="nid_esproc:Procedimiento" target="nid_esproc:CentroServicio">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1735,7 +1769,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:presencialDocumentacion71" source="nid_esproc:ProcedimientoPorPresencial" target="nid_esproc:DocumentacionEntrada">
+    <edge id="eid_esproc:presencialDocumentacion73" source="nid_esproc:ProcedimientoPorPresencial" target="nid_esproc:DocumentacionEntrada">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1746,7 +1780,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:permiteTramitationCorreoPostal72" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
+    <edge id="eid_esproc:permiteTramitation74" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:permiteTramitation</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_esproc:permiteTramitationCorreoPostal75" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1757,7 +1802,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:destino73" source="nid_esproc:Procedimiento" target="nid_esproc:CentroServicio">
+    <edge id="eid_esproc:destino76" source="nid_esproc:Procedimiento" target="nid_esproc:CentroServicio">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1780,7 +1825,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:detalleTramitacionEnLinea74" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_esproc:ProcedimientoProceso">
+    <edge id="eid_esproc:detalleTramitacionEnLinea77" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_esproc:ProcedimientoProceso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1791,7 +1836,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:detalleTramitacionPresencialTexto75" source="nid_esproc:ProcedimientoPorPresencial" target="nid_xsd:string">
+    <edge id="eid_esproc:detalleTramitacionPresencialTexto78" source="nid_esproc:ProcedimientoPorPresencial" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1814,7 +1859,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:materiaDePregunta76" source="nid_esproc:Pregunta" target="nid_esproc:Materia">
+    <edge id="eid_esproc:materiaDePregunta79" source="nid_esproc:Pregunta" target="nid_esproc:Materia">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1837,7 +1882,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:correoDocumentacionTexto77" source="nid_esproc:ProcedimientoPorCorreo" target="nid_owl:Thing">
+    <edge id="eid_esproc:correoDocumentacionTexto80" source="nid_esproc:ProcedimientoPorCorreo" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1848,7 +1893,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:claseTerminacion78" source="nid_cpsv:PublicService" target="nid_owl:Thing">
+    <edge id="eid_esproc:claseTerminacion81" source="nid_esproc:Procedimiento" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1859,30 +1904,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:fechaPlazoInicio79" source="nid_cpsv:PublicService" target="nid_xsd:dateTime">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:fechaPlazoInicio</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_dcterms:Location">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFA500" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dcterms:Location</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_cpsv:physicallyAvailableAt80" source="nid_cpsv:PublicService" target="nid_dcterms:Location">
+    <edge id="eid_cpsv:physicallyAvailableAt82" source="nid_cpsv:PublicService" target="nid_dcterms:Location">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1893,7 +1915,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:realizacion81" source="nid_esproc:Procedimiento" target="nid_esproc:CentroServicio">
+    <edge id="eid_esproc:fechaPlazoInicio83" source="nid_esproc:Procedimiento" target="nid_xsd:dateTime">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:fechaPlazoInicio</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_esproc:realizacion84" source="nid_esproc:Procedimiento" target="nid_esproc:CentroServicio">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1904,7 +1937,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:lugarPagoTexto82" source="nid_esproc:Procedimiento" target="nid_xsd:string">
+    <edge id="eid_esproc:lugarPagoTexto85" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1915,12 +1948,35 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:impreso83" source="nid_cpsv:PublicService" target="nid_owl:Thing">
+    <edge id="eid_esproc:impreso86" source="nid_cpsv:PublicService" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:impreso</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_dcterms:Agent">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="130.0" x="0.0" y="0.0" />
+               <y:Fill color="#FFA500" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dcterms:Agent</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_esproc:proporcionadoPor87" source="nid_cpsv:PublicService" target="nid_dcterms:Agent">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:proporcionadoPor</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -1938,7 +1994,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:telefonoDocumentacion84" source="nid_esproc:ProcedimientoPorTelefono" target="nid_esproc:DocumentacionEntrada">
+    <edge id="eid_esproc:telefonoDocumentacion88" source="nid_esproc:ProcedimientoPorTelefono" target="nid_esproc:DocumentacionEntrada">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1949,7 +2005,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:requisitos85" source="nid_esproc:Procedimiento" target="nid_xsd:string">
+    <edge id="eid_esproc:requisitos89" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1960,7 +2016,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:telefonoDocumentacionTexto86" source="nid_esproc:ProcedimientoPorTelefono" target="nid_xsd:string">
+    <edge id="eid_esproc:detalleTramitacionCorreoPostal90" source="nid_esproc:ProcedimientoPorCorreo" target="nid_esproc:ProcedimientoProceso">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:detalleTramitacionCorreoPostal</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_esproc:telefonoDocumentacionTexto91" source="nid_esproc:ProcedimientoPorTelefono" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1983,7 +2050,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:recursoProcede87" source="nid_cpsv:PublicService" target="nid_esproc:Recurso">
+    <edge id="eid_esproc:recursoProcede92" source="nid_cpsv:PublicService" target="nid_esproc:Recurso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -1994,7 +2061,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:procedimientoDeMateria88" source="nid_esproc:Materia" target="nid_esproc:Procedimiento">
+    <edge id="eid_esproc:procedimientoDeMateria93" source="nid_esproc:Materia" target="nid_esproc:Procedimiento">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2005,7 +2072,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:permiteTramitacionPresencial89" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
+    <edge id="eid_esproc:permiteTramitacionPresencial94" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2016,7 +2083,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:fechaRespuesta90" source="nid_cpsv:PublicService" target="nid_xsd:dateTime">
+    <edge id="eid_esproc:fechaRespuesta95" source="nid_esproc:Procedimiento" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2039,7 +2106,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_cpsv:hasInput91" source="nid_owl:Thing" target="nid_cpsv:Input">
+    <edge id="eid_cpsv:hasInput96" source="nid_owl:Thing" target="nid_cpsv:Input">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2050,7 +2117,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:correoDocumentacion92" source="nid_esproc:ProcedimientoPorCorreo" target="nid_esproc:DocumentacionEntrada">
+    <edge id="eid_esproc:correoDocumentacion97" source="nid_esproc:ProcedimientoPorCorreo" target="nid_esproc:DocumentacionEntrada">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2061,7 +2128,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_owl:topDataProperty93" source="nid_cpsv:PublicService" target="nid_owl:Thing">
+    <edge id="eid_owl:topDataProperty98" source="nid_cpsv:PublicService" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2072,7 +2139,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:detalleTramitacionTelefonoTexto94" source="nid_esproc:ProcedimientoPorTelefono" target="nid_xsd:string">
+    <edge id="eid_esproc:detalleTramitacionTelefonoTexto99" source="nid_esproc:ProcedimientoPorTelefono" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2083,7 +2150,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:detalleTramitacionPresencial95" source="nid_esproc:ProcedimientoPorPresencial" target="nid_esproc:ProcedimientoProceso">
+    <edge id="eid_esproc:detalleTramitacionPresencial100" source="nid_esproc:ProcedimientoPorPresencial" target="nid_esproc:ProcedimientoProceso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2094,18 +2161,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:enLineaUrl96" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:enLineaUrl</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_esproc:preguntaDeMateria97" source="nid_esproc:Materia" target="nid_esproc:Pregunta">
+    <edge id="eid_esproc:preguntaDeMateria101" source="nid_esproc:Materia" target="nid_esproc:Pregunta">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2116,7 +2172,18 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:fechaPresentacion98" source="nid_cpsv:PublicService" target="nid_xsd:dateTime">
+    <edge id="eid_esproc:enLineaUrl102" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:enLineaUrl</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_esproc:fechaPresentacion103" source="nid_esproc:Procedimiento" target="nid_xsd:dateTime">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2127,7 +2194,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:hasInputTexto99" source="nid_esproc:Procedimiento" target="nid_xsd:string">
+    <edge id="eid_esproc:hasInputTexto104" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2138,7 +2205,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:detalleTramitacionTelefono100" source="nid_cpsv:PublicService" target="nid_esproc:ProcedimientoProceso">
+    <edge id="eid_esproc:detalleTramitacionTelefono105" source="nid_cpsv:PublicService" target="nid_esproc:ProcedimientoProceso">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2149,7 +2216,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:permiteTramitacionCorreoCertificado101" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
+    <edge id="eid_esproc:permiteTramitacionCorreoCertificado106" source="nid_cpsv:PublicService" target="nid_xsd:boolean">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2160,7 +2227,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:followsTexto102" source="nid_owl:Thing" target="nid_xsd:string">
+    <edge id="eid_esproc:followsTexto107" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2171,7 +2238,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:claseIniciacionTexto103" source="nid_cpsv:PublicService" target="nid_xsd:string">
+    <edge id="eid_esproc:claseIniciacionTexto108" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2206,7 +2273,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_cpsv:implements104" source="nid_cpsv:Rule" target="nid_cpsv:FormalFramework">
+    <edge id="eid_cpsv:implements109" source="nid_cpsv:Rule" target="nid_cpsv:FormalFramework">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2217,7 +2284,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:pago105" source="nid_esproc:Procedimiento" target="nid_xsd:string">
+    <edge id="eid_esproc:pago110" source="nid_esproc:Procedimiento" target="nid_xsd:string">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2252,7 +2319,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_esproc:tipoVia106" source="nid_esproc:Via" target="nid_skos:Concept">
+    <edge id="eid_esproc:tipoVia111" source="nid_esproc:Via" target="nid_skos:Concept">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2263,7 +2330,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_esproc:enLineaDocumentacion107" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_esproc:DocumentacionEntrada">
+    <edge id="eid_esproc:enLineaDocumentacion112" source="nid_esproc:ProcedimientoPorEnLinea" target="nid_esproc:DocumentacionEntrada">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2274,19 +2341,7 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_dcterms:Agent">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="130.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">dcterms:Agent</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_cpsv:hasRole108" source="nid_dcterms:Agent" target="nid_cpsv:PublicService">
+    <edge id="eid_cpsv:hasRole113" source="nid_dcterms:Agent" target="nid_cpsv:PublicService">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -2297,23 +2352,12 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_cpsv:follows109" source="nid_owl:Thing" target="nid_cpsv:Rule">
+    <edge id="eid_cpsv:follows114" source="nid_owl:Thing" target="nid_cpsv:Rule">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">cpsv:follows</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-    <edge id="eid_esproc:lugarPresentacionTexto110" source="nid_esproc:Procedimiento" target="nid_xsd:string">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:lugarPresentacionTexto</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -2331,12 +2375,23 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_cpsv:produces111" source="nid_owl:Thing" target="nid_cpsv:Output">
+    <edge id="eid_cpsv:produces115" source="nid_owl:Thing" target="nid_cpsv:Output">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
                <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">cpsv:produces</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_esproc:lugarPresentacionTexto116" source="nid_esproc:Procedimiento" target="nid_xsd:string">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">esproc:lugarPresentacionTexto</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
