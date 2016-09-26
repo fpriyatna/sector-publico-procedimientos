@@ -142,6 +142,9 @@
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info",
       "@type" : "@id"
     },
+    "Location" : {
+      "@id" : "http://purl.org/dc/terms/Location"
+    },
     "dirigidoPor" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor",
       "@type" : "@id"
